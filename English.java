@@ -1,4 +1,26 @@
+public class English extends Course 
+	{
 
-public class English {
+		public English(String name, String grade) 
+			{
+				super(name, grade);
+			}
+		
+		public String getName() {
+	        return name;
+	    }
 
-}
+	    public void setName(String name) {
+	        this.name = name;
+	    }
+
+	    public String getGrade() {
+	        return grade;
+	    }
+
+	    public void setGrade(String grade) {
+	        this.grade = grade;
+	    }
+
+
+	}

@@ -1,12 +1,13 @@
 // Objectives given here: https://docs.google.com/document/d/1VyqRG5wR3q0exFC8klmNL9SVNYCZzdsOd8hYDabRpMk/edit
+import java.util.Scanner;
+import java.util.*;
+import java.io.*;
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException{
         // Leader: Cole
         // Members: Amanda, Ben, Owen
-        int a = -8 / 5;
-        int b = 11 / 2;
-        double c = 14 / 4;
-        System.out.println(a + b + c);
+	Roster x = new Roster();
+	x.fillStudentList();
     }
 
     private static void mainMenu() {

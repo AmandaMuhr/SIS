@@ -1,6 +1,6 @@
 public class Course {
-    private String name; // String containing the name of the course
-    private String grade; // String containing the grade.
+    protected String name; // String containing the name of the course
+    protected String grade; // String containing the grade.
 
     //////////////////
     // Constructors //

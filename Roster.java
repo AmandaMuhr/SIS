@@ -1,8 +1,28 @@
 import java.util.ArrayList;
+import java.util.Scanner;
+import java.util.*;
+import java.io.*;
 
 public class Roster {
-    private ArrayList<Student> studentList = new ArrayList<>(); // ArrayList containing the list of students
-
+    private ArrayList<Student> studentList = new ArrayList<>();// ArrayList containing the list of students
+    
+    public void fillStudentList() throws IOException //Gets student names, creates Student objects, assigns Student name,and puts them in studentList
+    {
+	Scanner studentFile = new Scanner(new File("StudentList.txt"));//Scanner that grabs the Student List 
+	
+	for(int i = 0; i < 24; i++)
+	{
+	   String firstName = studentFile.next();
+	   String lastName = studentFile.next();
+	   studentFile.nextLine();
+	   addNewStudent(firstName + " " + lastName);
+	}
+	for(Student i: studentList)
+	{
+	    System.out.println(i.getName());
+	}
+    }
+    
     ///////////////////////
     // GETTERS & SETTERS //
     ///////////////////////
@@ -39,7 +59,7 @@ public class Roster {
         studentList.add(index, new Student(name));
     }
 
-    //////////////
+    /////////////
     // METHODS //
     /////////////
 
