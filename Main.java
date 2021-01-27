@@ -6,8 +6,11 @@ public class Main {
     public static void main(String[] args) throws IOException{
         // Leader: Cole
         // Members: Amanda, Ben, Owen
+
 	Roster x = new Roster();
 	x.fillStudentList();
+
+
     }
 
     private static void mainMenu() {
@@ -31,6 +34,6 @@ public class Main {
     private static void sortStudents() {
         // sortLastName();
         // sortGPA();
-        // sortPeriod
+        // sortPeriod();
     }
 }

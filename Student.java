@@ -47,7 +47,7 @@ public class Student {
     public void setCourse(Course c, int index) { // Overidden Method to add new Course c at given index
         getTranscript().add(index, c);
     }
-
+   
     //////////////
     // METHODS //
     /////////////

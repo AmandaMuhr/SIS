@@ -17,9 +17,66 @@ public class Roster {
 	   studentFile.nextLine();
 	   addNewStudent(firstName + " " + lastName);
 	}
-	for(Student i: studentList)
+    }
+    
+    public void fillCourses() throws IOException
+    {
+	Scanner courseFile = new Scanner(new File("StudentList.txt"));
+	
+	for(int i = 0; i < 24; i++)
 	{
-	    System.out.println(i.getName());
+	    courseFile.next();
+	    courseFile.next();
+	    String per1Class = courseFile.next();
+	    double per1Grade = courseFile.nextDouble();
+	    String per2Class = courseFile.next();
+	    double per2Grade = courseFile.nextDouble();
+	    String per3Class = courseFile.next();
+	    double per3Grade = courseFile.nextDouble();
+	    
+	    
+	    if(per1Class.equals("Algebra"))
+	    {
+		
+	    }
+	    else if(per1Class.equals("Biology"))
+	    {
+		
+	    }
+	    else
+	    {
+		
+	    }
+	    
+	    
+	    
+	    if(per2Class.equals("Algebra"))
+	    {
+		
+	    }
+	    else if(per2Class.equals("Biology"))
+	    {
+		
+	    }
+	    else
+	    {
+		
+	    }
+	    
+	    
+	    
+	    if(per3Class.equals("Algebra"))
+	    {
+		
+	    }
+	    else if(per3Class.equals("Biology"))
+	    {
+		
+	    }
+	    else
+	    {
+		
+	    }
 	}
     }
     
